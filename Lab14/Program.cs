@@ -14,6 +14,7 @@ namespace Lab14
             cat.ShowInfo();
             Dog dog = new Dog("Пёс");
             dog.ShowInfo();
+
             Console.ReadKey();
         }
     }
@@ -21,11 +22,11 @@ namespace Lab14
     abstract class Animal
     {
         public abstract string Name { set; get; }
-        public Animal(string name)
+        public Animal(string name = "Животное")
         {
             Name = name;
         }
-        
+
         public abstract void Say();
 
         public void ShowInfo()
