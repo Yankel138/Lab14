@@ -14,7 +14,6 @@ namespace Lab14
             cat.ShowInfo();
             Dog dog = new Dog("Пёс");
             dog.ShowInfo();
-
             Console.ReadKey();
         }
     }
@@ -35,9 +34,6 @@ namespace Lab14
             Console.Write(Name + " издает звук: ");
             Say();
         }
-
-
-
     }
 
     class Cat : Animal
@@ -47,7 +43,7 @@ namespace Lab14
         {
             set
             {
-                this.name = value;
+                name = value;
             }
             get
             {
@@ -64,11 +60,6 @@ namespace Lab14
         {
             Console.WriteLine("Мяу");
         }
-        public new void ShowInfo()
-        {
-            base.ShowInfo();
-        }
-
     }
 
     class Dog : Animal
@@ -78,7 +69,7 @@ namespace Lab14
         {
             set
             {
-                this.name = value;
+                name = value;
             }
             get
             {
@@ -95,10 +86,5 @@ namespace Lab14
         {
             Console.WriteLine("Гав");
         }
-        public new void ShowInfo()
-        {
-            base.ShowInfo();
-        }
-
     }
 }
